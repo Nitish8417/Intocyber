@@ -1,0 +1,446 @@
+@media screen and (min-width:200px) and (max-width:767px) {
+
+
+    section {
+        padding: 25px 0;
+    }
+
+    button {
+        height: 35px;
+        padding: 0 25px;
+    }
+
+    /**********************Header*****************************/
+    section#header img.custom-logo,
+    section#sub-header img.custom-logo {
+        max-width: 150px;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .hamburger-menu-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    /***************************end********************************/
+
+    /**************************footer************************/
+    .main-footer {
+        padding: 25px 0;
+        height: 100%;
+    }
+
+    .top-footer {
+        gap: 25px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .footer-item {
+        width: 100%;
+        text-align: center;
+        max-width: 250px;
+    }
+
+    .footer-item ul#menu-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sub-tel-info {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .copyright-block {
+        flex-direction: column-reverse;
+    }
+
+    .menu-footer-links-container ul#menu-footer-links {
+        gap: 13px;
+        flex-direction: column;
+    }
+
+    /**************************end footer************************/
+
+
+    /**************************WME responsive css************************/
+    .wme,
+    .main-left-right {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .wme .left-block,
+    .main-left-right .left-img,
+    .wme .left-block-text,
+    .right-block-img {
+        width: 100%;
+    }
+
+    .wme .right-block,
+    .main-left-right .right-txt-data,
+    .wme .left-block-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .wme .left-block img {
+        object-fit: contain;
+        height: auto;
+    }
+
+    /**************************End WME responsive css************************/
+
+
+    /**************************opt block************************/
+
+    .opt-left-block {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    /**************************end opt css************************/
+
+
+    /**************************three block css************************/
+
+    /*three block*/
+    .three-block-data {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .three-block-data .block-item {
+        width: 100%;
+        background: linear-gradient(180deg, rgba(47, 47, 47, 1) 0%, rgba(24, 24, 24, 1) 100%);
+        margin-inline: auto;
+        height: auto;
+    }
+
+    .three-block-data .block-item>div {
+        width: auto;
+        display: grid;
+        gap: 10px;
+        padding: 25px;
+    }
+
+    /*end*/
+
+    /**************************End three  css************************/
+
+    /**************************product block responsive css************************/
+
+    .product-block {
+        border: 1px solid #2A2A2A;
+        background-image: none;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .prd-icon {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .prd-icon img {
+        max-width: 41px;
+        max-height: 41px;
+    }
+
+    .product-block-item {
+        padding: 40px 25px;
+    }
+
+    /**************************End product block responsive css************************/
+
+    /**************************Full width Text block responsive css************************/
+
+    .text-main-info-block {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-right-txt-block {
+        margin-left: 0;
+    }
+
+    /**************************End Full width Text block responsive css************************/
+
+
+    /**************************Contact form block responsive css************************/
+    div#main-contact {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .cont-txt-info-left {
+        width: 100%;
+    }
+
+    .cont-txt-info-right {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-right: 0;
+    }
+
+    .contact-form div>p {
+        flex-direction: column;
+    }
+
+    /**************************End Contact form block responsive css************************/
+
+    /*count number*/
+    .count-number ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .count-number ul li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*  */
+
+    .challages-blocks {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .btwn-line {
+        display: none;
+    }
+
+    .bottom-header-info {       
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    /**************************footer************************/
+    .main-footer {
+        padding: 25px 0;
+        height: 100%;
+    }
+
+    .top-footer {
+        gap: 12px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-item {
+        width: 100%;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .footer-item img {
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .footer-item ul#menu-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .sub-tel-info {
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .copyright-block {
+        flex-direction: column-reverse;
+    }
+
+    .menu-footer-links-container ul#menu-footer-links {
+        gap: 13px;
+        flex-direction: column;
+    }
+
+    /**************************end footer************************/
+
+
+    /**************************WME responsive css************************/
+    .wme {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .wme .left-block,
+    .wme .right-block-img {
+        width: 100%;
+    }
+
+    .wme .right-block,
+    .wme .left-block-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .wme .left-block img {
+        object-fit: contain;
+        height: auto;
+    }
+
+    /**************************End WME responsive css************************/
+
+
+    /**************************opt block************************/
+    .opt-left-block {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /**************************end opt css************************/
+
+    /**************************product block responsive css************************/
+
+    .product-block {
+        border: 1px solid #2A2A2A;
+        background-image: none;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .prd-icon {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .prd-icon img {
+        max-width: 41px;
+        max-height: 41px;
+    }
+
+    .product-block-item {
+        padding: 40px 25px;
+    }
+
+    /**************************End product block responsive css************************/
+
+    /**************************Contact form block responsive css************************/
+    div#main-contact {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .cont-txt-info-left {
+        width: 100%;
+    }
+
+    .cont-txt-info-right {
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-right: 0;
+    }
+
+    .contact-form div>p {
+        flex-direction: column;
+    }
+
+    /**************************End Contact form block responsive css************************/
+
+
+    /*three block*/
+    .three-block-data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .three-block-data .block-item {
+        width: 100%;
+        background: linear-gradient(180deg, rgba(47, 47, 47, 1) 0%, rgba(24, 24, 24, 1) 100%);
+        margin-inline: auto;
+        height: auto;
+    }
+
+    .three-block-data .block-item>div {
+        width: auto;
+        display: grid;
+        gap: 10px;
+        padding: 25px;
+    }
+
+    /*end*/
+
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1450px) {
+
+    .sub-tel-info {
+        flex-direction: column;
+    }
+
+    ul#menu-footer {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /**************************opt block************************/
+    .opt-left-block {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /**************************end opt css************************/
+
+    /**************************Contact form block responsive css************************/
+    .contact-form div>p {
+        flex-direction: column;
+    }
+
+    /**************************End Contact form block responsive css************************/
+
+    /**/
+
+    .three-block-data {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .three-block-data .block-item {
+        width: 100%;
+        background: linear-gradient(180deg, rgba(47, 47, 47, 1) 0%, rgba(24, 24, 24, 1) 100%);
+        margin-inline: auto;
+        height: auto;
+    }
+
+    .three-block-data .block-item>div {
+        width: auto;
+        display: grid;
+        gap: 10px;
+        padding: 25px;
+    }
+}

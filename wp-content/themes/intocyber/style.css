@@ -1,0 +1,226 @@
+/* 
+Theme Name: IntoCyber
+
+*/
+
+
+
+/* Define SF Pro Display Regular font */
+/*@font-face {*/
+/*    font-family: 'SF-Pro-Display-Regular';*/
+/*    src: url('https://staging.ijonaservices.com/wp-content/themes/intocyber/assets/fonts/SF-Pro-Display-Regular.ttf');*/
+/*}*/
+
+/* Define SF Pro Display Heavy font */
+/*@font-face {*/
+/*    font-family: 'SF-Pro-Display-Heavy';*/
+/*    src: url('https://staging.ijonaservices.com/wp-content/themes/intocyber/assets/fonts/SF-Pro-Display-Heavy.otf');*/
+/*}*/
+
+/* Define SF Pro Display Bold font */
+/*@font-face {*/
+/*    font-family: 'SF-Pro-Display-Bold';*/
+/*    src: url('https://staging.ijonaservices.com/wp-content/themes/intocyber/assets/fonts/SF-Pro-Display-Bold.otf');*/
+/*}*/
+
+/* Define SF Pro Display Medium font */
+/*@font-face {*/
+/*    font-family: 'SF-Pro-Display-Medium';*/
+/*    src: url('https://staging.ijonaservices.com/wp-content/themes/intocyber/assets/fonts/SF-Pro-Text-Medium.otf');*/
+/*}*/
+
+
+:root {
+    --bg-color: #181818;
+    --text-color: #fff;
+    --button-bg-color: #FE5723;
+    --p18-tag: clamp(0.875rem, 0.8287rem + 0.2469vw, 1.125rem);
+    --p31-tag: clamp(0.875rem, 0.6782rem + 1.0494vw, 1.9375rem);
+    --p20-tag: clamp(0.875rem, 0.8056rem + 0.3704vw, 1.25rem);
+    --p16-tag: clamp(0.875rem, 0.8519rem + 0.1235vw, 1rem);
+    --p14-tag: 14px;
+    --p18-color: #FE5723;
+    --p-color: #FE5723;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Poppins", sans-serif;
+}
+a{
+    font-family: "Poppins", sans-serif; 
+}
+
+.container {
+    max-width: 1920px;
+    width: 89.49%;
+    margin-inline: auto;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: clamp(1.5625rem, 1.2142rem + 1.5924vw, 3.125rem); /* font-size 25px to 50px*/
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    
+}
+
+h2 {
+    font-size: clamp(1.25rem, 0.9713rem + 1.2739vw, 2.5rem); /*font-size 20px to 40px*/
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    font-size: clamp(1.0625rem, 0.9403rem + 0.7789vw, 1.875rem);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+h4 {
+    font-size: clamp(1.0625rem, 0.965rem + 0.4459vw, 1.5rem);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+.p-color{
+ color: var(--p18-color);   
+}
+.p14 {
+    font-size: var(--p14-tag);
+    color: var(--text-color);
+     font-family: "Poppins", sans-serif;
+}
+
+.p16 {
+    font-size: var(--p16-tag);
+    color: var(--text-color);
+    line-height: 1.56;
+    font-family: "Poppins", sans-serif;
+}
+
+.p18 {
+    font-size: var(--p18-tag);
+    color: var(--text-color);
+     /*font-family: 'SF-Pro-Display-Regular';*/
+     line-height: 1.56;
+     font-family: "Poppins", sans-serif;
+}
+
+.p20 {
+    font-size: var(--p20-tag);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+     line-height: 1.56;
+}
+.p31 {
+    font-size: var(--p31-tag);
+    color: var(--text-color);
+   font-family: "Poppins", sans-serif;
+}
+
+.p18-color {
+    font-size: var(--p18-tag);
+    color: var(--p18-color);
+    font-family: "Poppins", sans-serif;
+     line-height: 1.56;
+}
+
+.pspan{
+    color:var(--p-color);
+    font-family: "Poppins", sans-serif;
+     line-height: 1.56;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--p14-tag);
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--p14-tag);
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+   font-family: "Poppins", sans-serif;
+    font-size: var(--p14-tag);
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    font-size: var(--p14-tag);
+    font-family: "Poppins", sans-serif;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+   font-family: "Poppins", sans-serif;
+    font-size: var(--p14-tag);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+   font-family: "Poppins", sans-serif;
+    font-size: var(--p14-tag);
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: #fff;
+   font-family: "Poppins", sans-serif;
+    font-size: var(--p14-tag);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    height: 45px;
+    width: max-content;
+    padding: 0 43px;
+    border: 0;
+    border-radius: 50px;
+    margin-inline: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.1rem;
+        font-size: 12px;
+}
+
+
