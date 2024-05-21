@@ -1,5 +1,5 @@
 section {
-    padding: 35px 0;
+    padding: 50px 0;
     background-image: url(../images/bg-line.svg);
     background-size: initial;
     background-position: center;
@@ -14,7 +14,7 @@ section {
 
 .product-block {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ section.three-blocks::before {
     width: auto;
     display: grid;
     gap: 10px;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -515,19 +515,20 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.wpcf7-not-valid 
 
 /*  */
 section#full-text-info {
-
+    background-image: none;
     position: relative;
     padding: 0;
-
+    background-color: #fff !important;
+    color: #181818;
 }
 
 .sub-full-text-info {
     height: 350px;
     display: flex;
     width: 100%;
-    background: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    /*background: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgba(37, 37, 37, 1) 100%);*/
     position: relative;
-    z-index: -1;
+    /*z-index: -1;*/
     align-items: center;
 }
 
@@ -547,4 +548,393 @@ section#full-text-info {
     max-width: 1274px;
     margin-inline: auto;
     text-align: center;
+}
+
+
+/************************************ accordion block css *****************************/
+.accordion-block.mainaccord .accordion-block-item {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    background-color: transparent;
+}
+
+.accordion-block.mainaccord .accordion-title {
+    background-color: #303030;
+}
+
+.accordion-block.mainaccord .accordion-decp.active {
+    background-color: #303030;
+}
+
+.accordion-title h5 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    /* Added to remove default margin */
+    cursor: pointer;
+    /* Added cursor pointer for better UX */
+}
+
+.accordion-decp {
+    display: none;
+    color: #fff;
+    padding: 0px 0 20px;
+}
+
+.active .accordion-decp {
+    display: block;
+}
+
+.accordion-text-item-list {
+    width: 100%;
+}
+
+.accordion-title {
+    position: relative;
+    padding: 20px 0;
+}
+
+.accordion-title::after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active .accordion-title::after {
+    content: "\2796";
+}
+
+.accordion-block.mainaccord {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+.accordion-decp.active {
+    display: block;
+}
+
+.count {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+    opacity: 0.5;
+}
+
+.count.count-opcity {
+    opacity: 1;
+}
+
+/***************************************** end *********************************/
+
+
+
+/***************************************** cv intocyber slou *********************************/
+.callages-of-vendors {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    flex: 1;
+    opacity: 0.5;
+}
+
+.challages-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+li.clg-vdr-img {
+    width: 42px;
+    height: 42px;
+}
+
+li.ic-sln-img {
+    width: 42px;
+    height: 42px;
+}
+
+.sub-clg-vdr-text li.clg-vdr-img {
+    width: 34px;
+    height: 34px;
+}
+
+.sub-ic-sln-text li.ic-sln-img {
+    width: 34px;
+    height: 34px;
+}
+
+ul.clg-vdr-img-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.sub-clg-vdr-text ul.clg-vdr-img-text,
+.sub-ic-sln-text ul.ic-sln-img-text {
+    margin-left: 7px;
+}
+
+ul.ic-sln-img-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.btwn-line {
+    margin-top: 10.88139281828074vh;
+}
+
+.sub-clg-data,
+.itro-solu-block {
+    background: linear-gradient(180deg, rgba(47, 47, 47, 1) 0%, rgba(24, 24, 24, 1) 50%);
+}
+
+.sub-clg-vdr-text,
+.sub-ic-sln-text {
+    padding: 17px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 39px;
+}
+
+.main-clg-vdr-text,
+.main-ic-sln-text {
+    padding: 17px 24px;
+}
+
+.intoCyber-solutions {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*******************************************end******************************/
+
+
+/*******************************************ic approach******************************/
+.approach-block {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.sales-block-img,
+.channel-block-img,
+.markiting-block-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+ul.sales-block-img-text {
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.sales-block,
+.channel-block,
+.markiting-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: max-content;
+    gap: 40px;
+    position: relative;
+}
+
+.sales-block-tabs {
+    width: auto;
+    background: linear-gradient(180deg, rgba(47, 47, 47, 1) 0%, rgba(24, 24, 24, 1) 50%);
+    padding: 20px;
+    position: relative;
+}
+
+.sales-block-tabs::after {
+    content: "";
+    position: absolute;
+    background-image: url(https://staging.ijonaservices.com/wp-content/uploads/2024/05/Line-38.svg);
+
+    width: 100%;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+}
+
+.sales-block-img::after,
+.channel-block-img::after,
+.markiting-block-img::after {
+    content: "";
+    position: absolute;
+    background-image: url(https://staging.ijonaservices.com/wp-content/uploads/2024/05/Line-38.svg);
+    width: 100%;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    left: 0;
+    top: 80px;
+}
+
+.sales-block::before,
+.channel-block::before {
+    content: "";
+    position: absolute;
+    background-image: url(https://staging.ijonaservices.com/wp-content/uploads/2024/05/Line-33.svg);
+    width: 100%;
+    height: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 50%;
+    top: 40px;
+}
+
+.sales-block-tabs:nth-last-child(1)::after {
+    display: none;
+}
+
+/*******************************************end******************************/
+
+/*******************************************end******************************/
+.main-accord-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.accordion-block-item {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+.right-accord-block {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.accordion-title h5 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.accordion-decp {
+    display: none;
+    color: #fff;
+
+}
+
+.active .accordion-decp {
+    display: block;
+}
+
+.accordion-text-item-list {
+    width: 100%;
+}
+
+.accordion-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.accordion-block.mainaccord .accordion-title h5 {
+    flex: 1;
+}
+
+.accordion-block.mainaccord .accordion-decp p {
+    padding-left: 50px;
+}
+
+.accordion-title::after {
+    content: '';
+    background-image: url(https://staging.ijonaservices.com/wp-content/uploads/2024/05/accord-arrow.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.active .accordion-title::after {}
+
+.accordion-block {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+}
+
+.accordion-decp.active {
+    display: block;
+}
+
+/*******************************************end******************************/
+section.with-background-padding {
+    padding: 100px 0;
+}
+
+.three-block-data-circle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+
+.block-icon-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 0px 20px #33333347;
+    margin: 0 auto;
+}
+
+.block-icon-circle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+    background-color: #333333a8;
+}
+
+.block-icon-circle img {
+    height: 100%;
+    object-fit: fill;
+}
+
+.block-txt-data-circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
